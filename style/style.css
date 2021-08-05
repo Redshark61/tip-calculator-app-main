@@ -1,0 +1,217 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Space Mono", monospace;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+
+html,
+body {
+  width: 100%;
+  background-color: #c5e4e7;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+img {
+  max-width: 5vw;
+  padding: 5rem 0;
+}
+
+main {
+  background-color: #fff;
+  max-width: 1440px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  padding: 2rem;
+  border-radius: 30px;
+}
+
+main > section {
+  border-radius: 30px;
+  padding: 2rem;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.data-output {
+  background-color: #004e52;
+  position: relative;
+}
+
+.data-output .output {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 2rem;
+}
+
+.data-output .output .output-title {
+  color: #f4fafa;
+  font-size: 20px;
+}
+
+.data-output .output h4 {
+  color: #7f9c9f;
+}
+
+.data-output .output h2 {
+  color: #26c0ab;
+  font-size: 50px;
+}
+
+.data-output .reset-button {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 80%;
+  height: 6vh;
+  background: #26c0ab;
+  border: none;
+  border-radius: 5px;
+  color: #004e52;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.data-output .reset-button:hover {
+  background-color: #c5e4e7;
+  cursor: pointer;
+}
+
+.data-input .people-input {
+  position: relative;
+}
+
+.data-input #warning_people {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 0px;
+  color: red;
+}
+
+.data-input h3.input-title {
+  color: #7f9c9f;
+  margin-bottom: 0.5rem;
+  font-size: 16px;
+}
+
+.data-input input {
+  background-color: #c5e4e7;
+  border: none;
+  font-size: 24px;
+  width: 100%;
+  padding: 0.5rem;
+  position: relative;
+  text-align: right;
+  font-weight: 700;
+  color: #004e52;
+}
+
+.data-input input:focus {
+  outline: none;
+  -webkit-box-shadow: 0 0 0 3px #26c0ab;
+          box-shadow: 0 0 0 3px #26c0ab;
+}
+
+.data-input #money-input {
+  background-image: url(../images/icon-dollar.svg);
+  background-repeat: no-repeat;
+  background-position: 10px 50%;
+}
+
+.data-input #people-input {
+  background-image: url(../images/icon-person.svg);
+  background-repeat: no-repeat;
+  background-position: 10px 50%;
+}
+
+.data-input .div-data-input:not(.people-input) {
+  margin-bottom: 3rem;
+}
+
+.data-input .tips-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.data-input .tips-container .tips-button {
+  border-radius: 5px;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+  height: 6vh;
+  width: 7vw;
+  background-color: #004e52;
+  border: none;
+  color: white;
+}
+
+.data-input .tips-container .tips-button:hover {
+  background-color: #c5e4e7;
+  color: #004e52;
+}
+
+.data-input .tips-container .tips-button.clicked {
+  background-color: #26c0ab;
+  outline: none;
+  color: #004e52;
+}
+
+.data-input .tips-container .tips-button.tips-custom {
+  padding: 1rem;
+  background-color: #c5e4e7;
+  color: #5e7a7d;
+}
+
+.data-input .tips-container .tips-button.tips-custom:hover {
+  cursor: text;
+}
+
+.data-input .tips-container .tips-button.tips-custom.clicked {
+  outline: none;
+  -webkit-box-shadow: 0 0 0 3px #26c0ab;
+          box-shadow: 0 0 0 3px #26c0ab;
+}
+/*# sourceMappingURL=style.css.map */

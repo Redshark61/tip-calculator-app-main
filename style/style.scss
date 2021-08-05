@@ -1,0 +1,191 @@
+$light-grayish-cyan: hsl(185, 41%, 84%);
+$light-grayish-cyan-2: hsl(189, 41%, 97%);
+$strong-cyan: hsl(172, 67%, 45%);
+$very-dark-cyan: hsl(183, 100%, 16%);
+$dark-grayish-cyan-2: hsl(184, 14%, 56%);
+$dark-grayish-cyan-1: hsl(186, 14%, 43%);
+
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Space Mono", monospace;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    a {
+        color: hsl(228, 45%, 44%);
+    }
+}
+
+html,
+body {
+    width: 100%;
+    background-color: $light-grayish-cyan;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    max-width: 5vw;
+    padding: 5rem 0;
+}
+
+main {
+    background-color: #fff;
+    max-width: 1440px;
+    // min-width: 80vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 2rem;
+    border-radius: 30px;
+    & > section {
+        border-radius: 30px;
+        padding: 2rem;
+        flex-grow: 1;
+    }
+}
+
+.data-output {
+    background-color: $very-dark-cyan;
+    position: relative;
+    .output {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 2rem;
+
+        .output-title {
+            color: $light-grayish-cyan-2;
+            font-size: 20px;
+        }
+        h4 {
+            color: $dark-grayish-cyan-2;
+        }
+
+        h2 {
+            color: $strong-cyan;
+            font-size: 50px;
+        }
+    }
+
+    .reset-button {
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 80%;
+        height: 6vh;
+        background: $strong-cyan;
+        border: none;
+        border-radius: 5px;
+        color: $very-dark-cyan;
+        font-size: 24px;
+        font-weight: bold;
+
+        &:hover {
+            background-color: $light-grayish-cyan;
+            cursor: pointer;
+        }
+    }
+}
+
+.data-input {
+    .people-input {
+        position: relative;
+    }
+    #warning_people {
+        display: none;
+        position: absolute;
+        right: 0;
+        top: 0px;
+        color: red;
+    }
+
+    h3.input-title {
+        color: $dark-grayish-cyan-2;
+        margin-bottom: 0.5rem;
+        font-size: 16px;
+    }
+    input {
+        background-color: $light-grayish-cyan;
+        border: none;
+        font-size: 24px;
+        width: 100%;
+        padding: 0.5rem;
+        position: relative;
+        text-align: right;
+        font-weight: 700;
+        color: $very-dark-cyan;
+
+        &:focus {
+            outline: none;
+            box-shadow: 0 0 0 3px $strong-cyan;
+        }
+    }
+
+    #money-input {
+        background-image: url(../images/icon-dollar.svg);
+        background-repeat: no-repeat;
+        background-position: 10px 50%;
+    }
+
+    #people-input {
+        background-image: url(../images/icon-person.svg);
+        background-repeat: no-repeat;
+        background-position: 10px 50%;
+    }
+
+    .div-data-input:not(.people-input) {
+        margin-bottom: 3rem;
+    }
+
+    .tips-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+
+        .tips-button {
+            border-radius: 5px;
+            font-size: 24px;
+            font-weight: bold;
+            cursor: pointer;
+            height: 6vh;
+            width: 7vw;
+            background-color: $very-dark-cyan;
+            border: none;
+            color: white;
+            &:hover {
+                background-color: $light-grayish-cyan;
+                color: $very-dark-cyan;
+            }
+
+            &.clicked {
+                background-color: $strong-cyan;
+                outline: none;
+                color: $very-dark-cyan;
+            }
+
+            &.tips-custom {
+                padding: 1rem;
+                background-color: $light-grayish-cyan;
+                color: $dark-grayish-cyan-1;
+
+                &:hover {
+                    cursor: text;
+                }
+
+                &.clicked {
+                    outline: none;
+                    box-shadow: 0 0 0 3px $strong-cyan;
+                }
+            }
+        }
+    }
+}
