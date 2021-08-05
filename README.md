@@ -22,7 +22,7 @@ Users should be able to:
 
 ### Link
 
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [tip app](https://angry-goldstine-928ce6.netlify.app)
 
 ## My process
 
